@@ -1,16 +1,16 @@
-/* Reset CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
+    font-family: 'Poppins', sans-serif; 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
 }
-
-body {
-    font-family: 'Poppins';font-size: 22px;
-    
-    background-color: #f4f4f4;
-}
-
+/*navbar*/
 .navbar-nav .nav-item .nav-link {
     color: white !important;
 }
@@ -19,6 +19,7 @@ body {
     margin-right: 15px;
 }
 
+/*carousel*/
 .carousel-inner img {
     width: 100%;
     height: 100%;
@@ -34,6 +35,47 @@ body {
 .carousel-caption h3{
     color: black;
 }
+h2{
+    font-family: "Noto Serif", serif;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 18px;
+      padding: 10px;
+  }
+
+  .carousel-caption h3 {
+      font-size: 24px;
+  }
+
+  .carousel-caption p {
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-caption {
+      top: 40%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      padding: 8px;
+  }
+
+  .carousel-caption h3 {
+      font-size: 20px;
+  }
+
+  .carousel-caption p {
+      font-size: 14px;
+  }
+}
+
+/*about*/
 .container {
     width: 80%;
     margin: auto;
@@ -57,14 +99,160 @@ h1 {
 }
 .step div h2 {
     margin: 0;
-    font-size: 24px;
     margin-bottom: 10px;
+    font-family: "Noto Serif", serif;
+    font-size: 2rem;
+    font-weight: 900;
 }
 .step div p {
     font-size: 16px;
 }
+.row p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/*feature*/
+.feature {
+    margin: 5rem 0;
+    position: relative;
+    isolation: isolate;
+  }
+  
+  .feature::before,
+  .feature::after {
+    position: absolute;
+    content: "";
+    background-color: black;
+    inset: 0;
+    z-index: -1;
+  }
+  
+  .feature::before {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
+    transform: skewY(8deg);
+  }
+  
+  .feature::after {
+    -webkit-clip-path: polygon(0 0, 100% 50%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 50%, 100% 100%, 0% 100%);
+    transform: skewY(-8deg);
+  }
+  
+  .feature__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .feature__image img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  
+  .feature__content {
+    margin: auto;
+  }
+  
+  .feature__content .section__header {
+    width: 100%;
+    margin-bottom: 4rem;
+    color: white;
+  }
+  
+  .feature__content ul {
+    list-style: none;
+    max-width: 400px;
+  }
+  
+  .feature__content li {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    color: white;
+  }
+  
+  .feature__content li::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 5px;
+    height: 12px;
+    width: 2px;
+    background-color: #dc2626;
+  }
+  
+  .section__header {
+    margin: auto;
+    padding-bottom: 0.75rem;
+    width: fit-content;
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #171717;
+  }
+  
+  .section__header::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 50px;
+    background-color: #171717;
+  }
+  
+  .section_container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .feature__container {
+      grid-template-columns: 1fr;
+    }
+    
+    .feature__content {
+      text-align: center;
+    }
+    
+    .feature__content ul {
+      margin: 0 auto;
+    }
+  }
 
 
+/*Info*/
+.card {
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+    background-color: var(--extra-light);
+    border-radius: 5px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.card p {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+/*FAQ*/
 .container {
     width: 80%;
     margin: auto;
@@ -96,8 +284,12 @@ h2 {
     transition: background-color 0.3s ease;
     position: relative; /* Added */
 }
+.faq p{
+    font-size: 1rem;
+    font-weight: 500;
+}
 .faq h3:hover {
-    background-color: #f1f1f1;
+    background-color: #ffffff;
 }
 .faq-answer {
     display: none;
@@ -105,7 +297,7 @@ h2 {
     border: 1px solid #ddd;
     border-top: none;
     border-radius: 0 0 5px 5px;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     margin-bottom: 10px;
 }
 .faq-answer.active {
@@ -123,18 +315,118 @@ h2 {
     transform: translateY(-50%) rotate(180deg);
 }
 
+
+/*TESTIMONIALS*/
+.section__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .header {
+    margin-bottom: 2rem;
+  }
+  
+  .header p {
+    letter-spacing: 2px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .header h1 {
+    font-family: "Noto Serif", serif;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  
+  .testimonials__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card0 {
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+    background-color: var(--extra-light);
+    border-radius: 5px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .card0 i {
+    font-size: 2.5rem;
+    color: black;
+  }
+  
+  .card0 p {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .card0 hr {
+    width: 40px;
+    margin: auto;
+    color: var(--text-light);
+  }
+  
+  .card0 img {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    border-radius: 100%;
+    border: 1px solid black;
+  }
+  
+  .card0 .name {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color:  #767268;
+    transition: 0.3s;
+  }
+  
+  .card0 .name:hover {
+    color: black;
+  }
+  .card0:hover{
+    transform: translateY(-5px);
+}
+ 
+  
+  
+  @media (width < 900px) {
+    .testimonials__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  }
+  
+  @media (width < 600px) {
+    .testimonials__grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+/*contact Us*/
 h1, h2 {
     text-align: center;
+    margin-bottom: 20px;
+    font-family: "Noto Serif", serif;
+    font-size: 2rem;
+    font-weight: 900;
 }
 .container {
     width: 80%;
     margin: auto;
     padding: 20px;
 }
-h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
+
 .contact {
     margin-bottom: 20px;
 }
@@ -142,7 +434,8 @@ h2 {
     color: white;
 }
 .contact p {
-    font-size: 18px;
+    font-size: 1rem;
+    font-weight: 500;
     margin-bottom: 10px;
 }
 .whatsapp-button {
@@ -163,8 +456,8 @@ h2 {
     margin-bottom: 20px;
 }
 .contact-info p {
-    font-size: 16px;
-    margin: 5px 0;
+    font-size: 1rem;
+    font-weight: 500;
 }
 .contact-info a {
     color: #007BFF;
@@ -173,6 +466,10 @@ h2 {
 .hours {
     font-size: 16px;
 }
+.hours p{
+    font-size: 1rem;
+    font-weight: 500;
+}
 .hours table {
     width: 100%;
     margin: 20px 0;
@@ -180,6 +477,8 @@ h2 {
 .hours td {
     padding: 5px 10px;
     text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
 }
 .toggle-arrow {
     cursor: pointer;
@@ -236,36 +535,4 @@ h2 {
 
 
 
-@media (max-width: 768px) {
-    .carousel-caption {
-        top: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 18px;
-        padding: 10px;
-    }
 
-    .carousel-caption h3 {
-        font-size: 24px;
-    }
-
-    .carousel-caption p {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 576px) {
-    .carousel-caption {
-        top: 40%;
-        transform: translate(-50%, -50%);
-        font-size: 16px;
-        padding: 8px;
-    }
-
-    .carousel-caption h3 {
-        font-size: 20px;
-    }
-
-    .carousel-caption p {
-        font-size: 14px;
-    }
-}
