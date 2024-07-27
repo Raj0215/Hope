@@ -33,3 +33,10 @@ document.addEventListener('DOMContentLoaded', function() {
         toggleArrow.textContent = toggleArrow.textContent === '▼' ? '▲' : '▼'; // Toggle arrow icon
     });
 });
+
+$(document).ready(function() {
+    $('.social-icon').click(function(event) {
+        event.preventDefault();
+        alert('You clicked on a social media icon!');
+    });
+});

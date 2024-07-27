@@ -11,7 +11,10 @@
    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet"/>
-
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
    <link rel="stylesheet" href="Css/styles.css">
 
    <script>
@@ -22,7 +25,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0a7cad;">
 
 
             <a class="navbar-brand" href="#Home">
@@ -33,11 +36,23 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="services.html">SERVICES</a>
+                      <div class="dropdown-content">
+                          <a href="Html/PRP.html">Platelet-rich plasma (PRP)</a>
+                          <a href="Html/GFC.html">Growth Factor Concentrate (GFC)</a>
+                          <a href="Html/HF.html">High Frequency (HF)</a>
+                          <a href="Html/PBT.html">Photo bio therapy (PBT)</a>
+                          <a href="Html/HST.html">Hair straightening treatment (HST)</a>
+                          <a href="Html/FHT.html">Full head transplant (FHT)</a>
+                          <a href="Html/BT.html">Beard transplant (BT)</a>
+                          <a href="Html/MT.html">Mustache transplant (MT)</a>
+                      </div>
+                  </li>
+                    <li class="nav-item"><a class="nav-link" href="#About">ABOUT</a></li>
                     <li class="nav-item"><a class="nav-link" href="#faq-section">FAQ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact-info">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact-info">CONTACT US</a></li>
                     <button class="btn btn-primary navbar-btn" id="appointment-btn" onclick="redirectToForm()">Make an Appointment</button>
                   </ul>
             </div>
@@ -48,48 +63,39 @@
 
     <div id="demo" class="carousel slide" data-ride="carousel">
 
-      <!-- Indicators -->
-      <ul class="carousel-indicators">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
           <li data-target="#demo" data-slide-to="0" class="active"></li>
           <li data-target="#demo" data-slide-to="1"></li>
           <li data-target="#demo" data-slide-to="2"></li>
-      </ul>
-  
-      <!-- The slideshow -->
-      <div class="carousel-inner">
+        </ul>
+        
+        <!-- The slideshow -->
+        <div class="carousel-inner">
           <div class="carousel-item active">
-              <img src="assets/Our Team.webp" class="d-block w-100 img-fluid" alt="Los Angeles">
-              <div class="carousel-caption">
-                  <h3><b>Enhancing beauty, inspiring confidence, one consultation at a time</b></h3>
-                  <p>LA is always so much fun!</p>
-              </div>
+            <img src="assets/Our Team.webp" alt="Los Angeles" width="500" height="500">
+           
           </div>
           <div class="carousel-item">
-              <img src="assets/Our Team.webp" class="d-block w-100 img-fluid" alt="Chicago">
-              <div class="carousel-caption">
-                  <h3><b>Enhancing beauty, inspiring confidence, one consultation at a time</b></h3>
-                  <p>LA is always so much fun!</p>
-              </div>
+            <img src="assets/Our Team.webp" alt="Chicago" width="500" height="500">
+            
           </div>
           <div class="carousel-item">
-              <img src="assets/Our Team.webp" class="d-block w-100 img-fluid" alt="New York">
-              <div class="carousel-caption">
-                  <h3><b>Enhancing beauty, inspiring confidence, one consultation at a time</b></h3>
-                  <p>LA is always so much fun!</p>
-              </div>
-          </div>
-      </div>
-  
-      <!-- Left and right controls -->
-      <a class="carousel-control-prev" href="#demo" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-      </a>
-      <a class="carousel-control-next" href="#demo" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-      </a>
-  </div>
-  
+            
+            <img src="assets/Our Team.webp" alt="New York" width="500" height="500">
 
+          </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+<br><br>
 <div id="About" class="container my-5">
   <h2 class="text-center">About Us</h2>
   <div class="row">
@@ -288,6 +294,37 @@
             <i class="fas fa-location-arrow"></i> Get Directions
         </a>
     </div>
+
+
+    <footer class="footer">
+      <div class="container">
+          <h2>Get in Touch</h2>
+          <p>Enhancing beauty, inspiring confidence, one consultation at a time</p>
+          <div class="social-media">
+              <a href="https://tinyurl.com/5hfmvm57" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="https://tinyurl.com/3d5nzc97" class="social-icon"><i class="fab fa-facebook"></i></a>
+              <a href="https://tinyurl.com/2zbvd9dm" class="social-icon"><i class="fab fa-youtube"></i></a>
+              <a href="https://wa.me/919226502901" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+              <a href="https://tinyurl.com/mty88cux" class="social-icon"><i class="fab fa-linkedin"></i></a>
+              <a href="https://x.com/HopeAesthetic24" class="social-icon"><i class="fa-sharp fa-solid fa-x"></i></a>
+          </div>
+          <div class="contact-info">
+              <div class="contact-card">
+                  <i class="fa-solid fa-calendar-check" style="color: #0a7cad;"></i>
+                  <p><a href="https://tinyurl.com/43zrm966" style="color: #0a7cad;"> Make an Appointment</a></p>
+              </div>
+
+              <div class="contact-card">
+                  <i class="fas fa-envelope" style="color: #0a7cad;"></i>
+                  <p><a href="mailto:support@hopeaesthetics.in" style="color: #0a7cad;">support@hopeaesthetics.in</a></p>
+              </div>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2024 HOPE AESTHETICS INTERNATIONAL - ALL RIGHTS RESERVED.</p>
+      </div>
+  </footer>
+
 
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
    
