@@ -52,12 +52,14 @@
 }
 /*Navbar*/
 .navbar-nav .nav-item .nav-link {
-    color: white !important;
+  color: white !important;
 }
+
 .navbar-nav .nav-item {
-    margin-left: 15px;
-    margin-right: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -87,6 +89,7 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 .btn-custom {
   background-color: #0a7cad;
   border-color: #0a7cad; /* Make border color same as background */
@@ -97,6 +100,7 @@
   background-color: #0a7cad; /* Ensure hover color is consistent */
   border-color: #0a7cad; /* Ensure hover border color is consistent */
 }
+
 /*carousel*/
 .carousel-inner img {
     width: 100%;
