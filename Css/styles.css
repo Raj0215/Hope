@@ -10,6 +10,46 @@
     list-style: none;
     text-decoration: none;
 }
+/* Header Top Bar */
+.header-top-bar {
+  background-color:  #223a66; /* Change to your preferred background color */
+  color: #fff; /* Change to your preferred text color */
+  padding: 10px 0;
+  font-size: 14px;
+}
+.header-top-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-top-bar .contact-info span {
+  margin-right: 20px;
+}
+
+.header-top-bar .contact-info a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.header-top-bar .contact-info a:hover {
+  color: #ddd;
+}
+
+.header-top-bar .social-media a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+
+.header-top-bar .social-media a:hover {
+  color: #ddd;
+}
 /*Navbar*/
 .navbar-nav .nav-item .nav-link {
     color: white !important;
@@ -46,6 +86,16 @@
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+.btn-custom {
+  background-color: #0a7cad;
+  border-color: #0a7cad; /* Make border color same as background */
+  color: white;
+}
+
+.btn-custom:hover {
+  background-color: #0a7cad; /* Ensure hover color is consistent */
+  border-color: #0a7cad; /* Ensure hover border color is consistent */
 }
 /*carousel*/
 .carousel-inner img {
@@ -164,7 +214,7 @@ h1 {
     top: 5px;
     height: 12px;
     width: 2px;
-    background-color: #dc2626;
+    background-color: #000000;
   }
   
   .section__header {
@@ -176,23 +226,26 @@ h1 {
     font-weight: 600;
     color: #171717;
   }
-  
-  .section__header::before {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    width: 50px;
-    background-color: #171717;
-  }
-  
+
   .section_container {
     max-width: 1200px;
     margin: auto;
     padding: 5rem 1rem;
   }
   
+  .services-list {
+    list-style-type: none;
+    padding: 0; 
+}
+
+.services-list li a {
+    color: white; 
+    text-decoration: none;
+    font-size: large;
+}
+
+
+
   @media (max-width: 768px) {
     .feature__container {
       grid-template-columns: 1fr;
@@ -617,3 +670,61 @@ h2 {
     font-size: 1.2em;
   }
 }
+/*services*/
+.hero {
+  background: #0a7cad; /* Adjust as per your image */
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.hero h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.service {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 10px;
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.service h3 {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.service p {
+  color: #000000;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+

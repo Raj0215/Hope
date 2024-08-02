@@ -14,7 +14,7 @@
    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icofont/1.0.1/css/icofont.min.css">
    <link rel="stylesheet" href="Css/styles.css">
 
    <script>
@@ -25,10 +25,27 @@
 </head>
 <body>
     <header>
+        <div class="header-top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span>Email: <a href="mailto:support@hopeaesthetics.in">support@hopeaesthetics.in</a></span>
+                <span>Phone: <a href="tel:+919226502901">+91 922 650 2901</a></span>
+            </div>
+            <div class="social-media">
+              <a href="https://tinyurl.com/5hfmvm57" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="https://tinyurl.com/3d5nzc97" class="social-icon"><i class="fab fa-facebook"></i></a>
+              <a href="https://tinyurl.com/2zbvd9dm" class="social-icon"><i class="fab fa-youtube"></i></a>
+              <a href="https://wa.me/919226502901" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+              <a href="https://tinyurl.com/mty88cux" class="social-icon"><i class="fab fa-linkedin"></i></a>
+              <a href="https://x.com/HopeAesthetic24" class="social-icon"><i class="fa-sharp fa-solid fa-x"></i></a>
+          
+            </div>
+        </div>
+    </div>
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0a7cad;">
 
 
-            <a class="navbar-brand" href="#Home">
+            <a class="navbar-brand" href="index.html">
                 <img src="assets/logo.png" alt="Logo" style="height: 50px;"> HOPE AESTHETICS
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,24 +53,24 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
                     <li class="nav-item dropdown">
                       <a class="nav-link" href="services.html">SERVICES</a>
                       <div class="dropdown-content">
-                          <a href="Html/PRP.html">Platelet-rich plasma (PRP)</a>
-                          <a href="Html/GFC.html">Growth Factor Concentrate (GFC)</a>
-                          <a href="Html/HF.html">High Frequency (HF)</a>
-                          <a href="Html/PBT.html">Photo bio therapy (PBT)</a>
-                          <a href="Html/HST.html">Hair straightening treatment (HST)</a>
-                          <a href="Html/FHT.html">Full head transplant (FHT)</a>
-                          <a href="Html/BT.html">Beard transplant (BT)</a>
-                          <a href="Html/MT.html">Mustache transplant (MT)</a>
+                          <a href="PRP.html">Platelet-rich plasma (PRP)</a>
+                          <a href="GFC.html">Growth Factor Concentrate (GFC)</a>
+                          <a href="HF.html">High Frequency (HF)</a>
+                          <a href="PBT.html">Photo bio therapy (PBT)</a>
+                          <a href="HST.html">Hair straightening treatment (HST)</a>
+                          <a href="FHT.html">Full head transplant (FHT)</a>
+                          <a href="BT.html">Beard transplant (BT)</a>
+                          <a href="MT.html">Mustache transplant (MT)</a>
                       </div>
                   </li>
                     <li class="nav-item"><a class="nav-link" href="#About">ABOUT</a></li>
                     <li class="nav-item"><a class="nav-link" href="#faq-section">FAQ</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact-info">CONTACT US</a></li>
-                    <button class="btn btn-primary navbar-btn" id="appointment-btn" onclick="redirectToForm()">Make an Appointment</button>
+                    <button class="btn btn-primary navbar-btn btn-custom" id="appointment-btn" style="background-color: #0a7cad;" onclick="redirectToForm()">Make an Appointment </button>
                   </ul>
             </div>
             
@@ -141,17 +158,17 @@
         <img src="assets/Mission.webp" alt="feature" />
       </div>
       <div class="feature__content">
-        <h2 class="section__header">03 FEATURES</h2>
-        <ul>
-          <li>
-            SINGLE CYLINDER, FOUR STROKE, LIQUID COOLED, SI ENGINE, DOHC BSVVI
-            COMPLIANT
-          </li>
-          <li>CONSTANT MESH 6 SPPEED</li>
-          <li>MONO SHOCK ABSORBER, 7 STEP ADJUSTABLE</li>
-          <li>DISC WITH FLOATING CALIPER AND ABS</li>
-          <li>DOUBLE CRADLE TUBULAR FRAME</li>
-        </ul>
+        <h2 class="section__header">SERVICES</h2>
+        <ul class="services-list">
+          <li><a href="PRP.html">Platelet-rich plasma (PRP)</a></li>
+          <li><a href="GFC.html">Growth Factor Concentrate (GFC)</a></li>
+          <li><a href="HF.html">High Frequency (HF)</a></li>
+          <li><a href="PBT.html">Photo Bio Therapy (PBT)</a></li>
+          <li><a href="HST.html">Hair Straightening Treatment (HST)</a></li>
+          <li><a href="FHT.html">Full Head Transplant (FHT)</a></li>
+          <li><a href="BT.html">Beard Transplant (BT)</a></li>
+          <li><a href="MT.html">Mustache Transplant (MT)</a></li>
+      </ul>
       </div>
     </div>
   </section>
@@ -233,7 +250,7 @@
               my house is in the perfect hands.
             </p>
             <hr />
-            <img src="assets/pic-1.jpg" alt="user" />
+            <img src="assets/Our Team.webp" alt="user" />
             <p class="name">Allan Collins</p>
           </div>
           <div class="card0">
@@ -243,7 +260,7 @@
               solved in a matter of days.
             </p>
             <hr />
-            <img src="assets/pic-2.jpeg" alt="user" />
+            <img src="assets/1.jpg" alt="user" />
             <p class="name">Clay Washington</p>
           </div>
           <div class="card0">
@@ -253,7 +270,7 @@
               repaired, thanks to Sentry Oak.
             </p>
             <hr />
-            <img src="assets/pic-3.jpg" alt="user" />
+            <img src="assets/logo.png" alt="user" />
             <p class="name">Tanya Grant</p>
           </div>
         </div>
