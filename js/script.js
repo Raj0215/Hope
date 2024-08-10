@@ -129,6 +129,21 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-function redirectToForm() {
-  window.open("https://docs.google.com/forms/d/e/1FAIpQLSfLyk0WVM3Y1N8ctYaiASivYcWXblJsF4J7ZB-77NKAVo3Bwg/viewform", "_blank");
-}
+
+
+
+/*Appointment*/
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwh73miO3F4XIAvSYg_qNzP7lOXRUC69_qrCt5YrAyaY5gWW6wruJhQ_T3gA-2aiVrtag/exec';
+    const form = document.forms['google-sheet'];
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+
+        // Fetch API call to submit form data
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                alert("Thanks for Contacting us..! We Will Contact You Soon...");
+                form.reset(); // Reset the form
+            })
+            .catch(error => console.error('Error!', error.message));
+    });

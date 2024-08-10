@@ -105,14 +105,7 @@ a{
   }
 }
 
-.list-item .bullet-list {
-  list-style-type: disc;
-  margin: 0;
-  padding-left: 20px; /* Add padding to align the bullets */
-}
-.list-item ul.bullet-list li {
-  color: black; /* Bullet color */
-}
+
 
 .header .menu > ul > li .sub-menu > ul > li {
   line-height: 1;
@@ -192,19 +185,6 @@ a{
   color: #ea4636;
 }
 
-.header .menu > ul > li .sub-menu.mega-menu-column-4 .list-item ul {
-  list-style-type: disc; /* Make sure bullets are displayed */
-  padding-left: 20px; /* Ensure there is enough space for bullets */
-  margin: 0; /* Remove default margin */
-}
-.header .menu > ul > li .sub-menu.mega-menu-column-4 .list-item ul li {
-  color: black; /* Ensure bullet color matches the list item color */
-}
-
-/* If still not visible, check if there's any overflow issue */
-.header .menu > ul > li .sub-menu.mega-menu-column-4 .list-item {
-  overflow: visible; /* Ensure the container does not hide the bullets */
-}
 
 .mobile-menu-head,
 .mobile-menu-trigger{
@@ -1138,3 +1118,140 @@ h2 {
 	box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   }
   
+  /*appointment*/
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.appointment-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+.appointment-container img {
+    width: 80%;
+    border-radius: 15px;
+    max-width: 500px;
+    align-items: center;
+}
+
+.appointment-form {
+    flex: 1;
+    background: linear-gradient(135deg, #1976D2, #33C9DC);
+    padding: 40px;
+    border-radius: 20px;
+    color: white;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.appointment-form h2 {
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.appointment-form input[type="text"],
+.appointment-form input[type="email"],
+.appointment-form input[type="phone"],
+.appointment-form input[type="age"],
+.appointment-form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+.appointment-form input[type="text"]:focus,
+.appointment-form input[type="email"]:focus,
+.appointment-form input[type="phone"]:focus,
+.appointment-form input[type="age"]:focus {
+    outline: none;
+    border-color: #33C9DC;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.appointment-form input[type="submit"] {
+    background-color: #1eaebd;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.appointment-form input[type="submit"]:active{
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); 
+}
+.appointment-form input[type="submit"]:hover {
+    background-color: #1976D2;
+    transform: scale(1.05);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .appointment-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .appointment-form {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .appointment-form h2 {
+        font-size: 22px;
+    }
+
+    .appointment-form input[type="text"],
+    .appointment-form input[type="email"],
+    .appointment-form input[type="phone"],
+    .appointment-form input[type="age"],
+    .appointment-form input[type="submit"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .appointment-container {
+        padding: 5px;
+    }
+
+    .appointment-form {
+        padding: 15px;
+    }
+
+    .appointment-form h2 {
+        font-size: 20px;
+    }
+
+    .appointment-form input[type="text"],
+    .appointment-form input[type="email"],
+    .appointment-form input[type="phone"],
+    .appointment-form input[type="age"],
+    .appointment-form input[type="submit"] {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+/**/
