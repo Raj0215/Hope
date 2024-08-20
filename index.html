@@ -13,7 +13,9 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/ /bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icofont/1.0.1/css/icofont.min.css">
   <link rel="stylesheet" type="text/css" href="Css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="Css/styles.css">
@@ -25,11 +27,11 @@
  	<div class="container1">
  		<div class="row v-center">
  			<div class="header-item item-left">
- 				<div class="logo">
-					<img src="assets/CLINIC LOGO 10.png" alt="Logo" style="height: 38px;">&nbsp;&nbsp;
-					<img src="assets/CLINIC LOGO 14.png" alt="Logo" style="height: 38px;">
-
- 				</div>
+          <div class="logo" onclick="location.href='index.html';" style="cursor: pointer;">
+              <img src="assets/CLINIC LOGO 10.png" alt="Logo" style="height: 38px;">&nbsp;&nbsp;
+              <img src="assets/CLINIC LOGO 14.png" alt="Logo" style="height: 38px;">
+          </div>
+     
  			</div>
  			<!-- menu start here -->
  			<div class="header-item item-center">
@@ -57,13 +59,10 @@
                                	  	 <li><a href="PBT.html">• Photo Bio Therapy (PBT)</a></li>
                                	  	 <li><a href="BHT.html">• Body hair transplant</a></li>
                                      <li><a href="MSHT.html">• Minimal shave hair Transplant</a></li>
-
-                               	 
                                	  </ul>
                                </div>
                                <div class="list-item">
-                                <h4 class="title"></h4>
-
+                               
                                	<ul style="list-style-type: disc; color: black;">
                                	  	 <li><a href="HST.html">• Hair Strengthing Treatment</a></li>
                                	  	 <li><a href="FHT.html">• Full Head Transplant</a></li>
@@ -75,7 +74,7 @@
                                	 
                                </div>
                                <div class="list-item">
-								<h4 class="title">Dental</h4>
+								<!--<h4 class="title">Dental</h4>-->
                                	<ul >
                                	  	 <li><a href="DHI.html">• Dense hair implementation</a></li>
                                	  	 <li><a href="FHTR.html">• Failed hair transplant repair</a></li>
@@ -84,6 +83,7 @@
                                      <li><a href="HR.html">• Hairline Reconstruction</a></li>
                                	  </ul>
                                </div>
+                               
                                <div class="list-item">
                                	 <img src="assets/CLINIC LOGO 11.png" alt="shop">
                                </div>
@@ -96,13 +96,10 @@
 							<a href="#faq-section">FAQ</a>
 						</li>
  						<li>
- 							<a href="#contact-info">CONTACT US</a>
+ 							<a href="ContactUs.html">CONTACT US</a>
  						</li>
-             <li>
-              <a href="Appointment.html">Appointment</a>
-            </li>
             <li>
-              <a href="appointment.html" class="btn btn-primary navbar-btn btn-custom">Make an Appointment</a>
+              <button class="btn btn-primary navbar-btn btn-custom" id="appointment-btn" onclick="redirectToForm()">Make an Appointment</button>
             </li>
  					</ul>
  				</nav>
@@ -157,11 +154,11 @@
 </div>
  
 <div id="About" class="container my-5">
-  <h1 class="text-center"><b>About Us</b></h1>
+  <!--<h1 class="text-center" style="color: #00a0e3;"><b>About Us</b></h1>-->
   <div class="row">
       <div class="col-md-6">
-          <h2>Our Mission</h2>
-          <p>At Hope Aesthetics International, our mission is to transform lives by restoring confidence and enhancing appearance through state-of-the-art hair restoration solutions. We are dedicated to providing exceptional, personalized care in a compassionate and professional environment. Our commitment to continuous innovation, ethical practices, and patient education ensures the highest standards of treatment and a natural, lasting result for every patient.</p>
+          <h1 style="color: #00a0e3;"><b>Our Mission</b></h1>
+          <p style="text-align: justify;" >At Hope Aesthetics International, our mission is to transform lives by restoring confidence and enhancing appearance through state-of-the-art hair restoration solutions. We are dedicated to providing exceptional, personalized care in a compassionate and professional environment. Our commitment to continuous innovation, ethical practices, and patient education ensures the highest standards of treatment and a natural, lasting result for every patient.</p>
       </div>
       <div class="col-md-6">
           <img src="assets/Mission.webp" alt="Our Mission" class="img-fluid">
@@ -172,8 +169,8 @@
 <div class="container my-5">
   <div class="row">
       <div class="col-md-6 order-md-2">
-          <h2>Our Team</h2>
-          <p>Our team of experienced healthcare professionals includes doctors, technicians, and support staff who are dedicated to providing the best possible care to our patients. We are committed to staying up-to-date with the latest medical advancements and techniques to ensure that our patients receive the most effective treatments.</p>
+        <h1 style="color: #00a0e3;"><b>Our Team</b></h1>
+          <p style="text-align: justify;" >Our team of experienced healthcare professionals includes doctors, technicians, and support staff who are dedicated to providing the best possible care to our patients. We are committed to staying up-to-date with the latest medical advancements and techniques to ensure that our patients receive the most effective treatments.</p>
       </div>
       <div class="col-md-6 order-md-1">
           <img src="assets/Our Team.webp" alt="Our Team" class="img-fluid">
@@ -184,9 +181,14 @@
 <div class="container my-5">
   <div class="row">
       <div class="col-md-6">
-          <h2>Services</h2>
-          <p>At Hope Aesthetics International, we offer a wide range of medical services to meet the needs of our patients. From routine check-ups and preventative care to specialized treatments and procedures, we are here to help you achieve and maintain optimal health.</p>
-          <p><b>FUE Hair Transplant</b> | <b>Beard Transplant</b> | <b>Mustache Transplant</b> | <b>Hair Fall Treatment</b> | <b>Advanced PRP Therapy</b> | <b>Advanced GFC Therapy</b> |<a href="services.html">More</a>|</p>
+        <h1 style="color: #00a0e3;"><b>Our Vision</b></h1>
+          <p style="text-align: justify;" >
+            At Hope Aesthetics International, our vision is to empower individuals through the transformative power of hair restoration. 
+            We believe that restoring hair is about more than appearance—it's about rebuilding confidence, self-worth, and a sense of belonging. 
+            Our mission is to provide personalized, high-quality care tailored to each individual's needs, ensuring that every patient leaves not only with renewed hair but with renewed self-belief.
+             We strive to be the leading clinic where every client feels valued, supported, and ready to embrace their true selves with pride.
+
+          </p>
       </div>
       <div class="col-md-6">
           <img src="assets/Services.webp" alt="Services" class="img-fluid">
@@ -200,7 +202,7 @@
       <img src="assets/Mission.webp" alt="feature" />
     </div>
     <div class="feature__content">
-      <h2 class="section__header">SERVICES</h2>
+      <h1 class="section__header"><b>SERVICES</b></h1>
       <ul class="services-list">
         <li><a href="PRP.html">Platelet-rich plasma (PRP)</a></li>
         <li><a href="GFC.html">Growth Factor Concentrate (GFC)</a></li>
@@ -219,30 +221,35 @@
 <section id="services" class="section__container">
   <div class="row mt-5">
       <div class="col-md-4 mb-4">
-          <div class="card">
+          <div class="card h-100">
               <img src="assets/1.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                  <h5 class="card-title"><b> Advanced PRP Therapy</b></h5>
-                  <p class="card-text">
-                      Advanced PRP Therapy (PRF) hair treatment harnesses the regenerative power of your own blood plasma to combat hair loss and promote hair growth. During the procedure, blood is drawn from your arm and processed in a centrifuge to separate the platelet-rich plasma (PRP) and fibrin. </p>
+              <div class="card-body d-flex flex-column">
+                  <h1 class="card-title" style="color: #00a0e3;"><b>Advanced PRP <br>Therapy</b></h1>
+                  <p class="card-text" style="text-align: justify;" >
+                      Advanced PRP Therapy (PRF) hair treatment harnesses the regenerative power of your own blood plasma to combat hair loss and promote hair growth. During the procedure, blood is drawn from your arm and processed in a centrifuge to separate the platelet-rich plasma (PRP) and fibrin.
+                  </p>
+              </div>
+          </div>
+      </div>
+      
+      <div class="col-md-4 mb-4">
+          <div class="card h-100">
+              <img src="assets/1.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column">
+                  <h1 class="card-title" style="color: #00a0e3;"><b>Follicular Unit Extraction</b></h1>
+                  <p class="card-text" style="text-align: justify;" >
+                    Follicular Unit Extraction (FUE) hair transplant is a modern and popular technique for hair restoration. In this procedure, individual hair follicles are extracted from a donor area, usually the back or sides of the scalp, and then implanted into the balding or thinning areas.
+                 
+                  </p>
               </div>
           </div>
       </div>
       <div class="col-md-4 mb-4">
-          <div class="card">
-              <img src="assets/2.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                  <h5 class="card-title"><b>Follicular Unit Extraction </b></h5>
-                  <p class="card-text">Follicular Unit Extraction (FUE) hair transplant is a modern and popular technique for hair restoration. In this procedure, individual hair follicles are extracted from a donor area, usually the back or sides of the scalp, and then implanted into the balding or thinning areas.</p>
-              </div>
-          </div>
-      </div>
-      <div class="col-md-4 mb-4">
-          <div class="card">
+          <div class="card h-100">
               <img src="assets/3.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                  <h5 class="card-title"><b>Advanced Glycation End </b></h5>
-                  <p class="card-text">Advanced Glycation End (AGEs) play a significant role in the development and progression of various age-related diseases, including diabetes and cardiovascular conditions. Glycation is a process where sugar molecules bind to proteins or lipids without enzymatic control, forming harmful AGEs. </p>
+              <div class="card-body d-flex flex-column">
+                  <h1 class="card-title" style="color: #00a0e3;"><b>Advanced Glycation End</b></h1>
+                  <p class="card-text" style="text-align: justify;" >Advanced Glycation End (AGEs) play a significant role in the development and progression of various age-related diseases, including diabetes and cardiovascular conditions. Glycation is a process where sugar molecules bind to proteins or lipids without enzymatic control, forming harmful AGEs.</p>
               </div>
           </div>
       </div>
@@ -251,7 +258,7 @@
 
 
 <div id="faq-section" class="container">
-  <h1><b>Frequently Asked Questions</b></h1>
+  <h1 style="color: #00a0e3;"><b>Frequently Asked Questions</b></h1>
   <div class="contact-info">
       <p>Please reach us at <a href="mailto:info@hopeaesthetics.in">info@hopeaesthetics.in</a> if you cannot find an answer to your question.</p>
   </div>
@@ -282,44 +289,48 @@
 <div class="section__container">
   <div class="header1">
     <p>TESTIMONIALS</p>
-    <h1><b>What our clients say about us.</b></h1>
+    <h1 style="color: #00a0e3;"><b>What our clients say about us.</b></h1>
   </div>
   <div class="testimonials__grid">
     <div class="card0">
       <span><i class="ri-double-quotes-l"></i></span>
-      <p>
-        I've been working with these guys for a long time and I can say that
-        my house is in the perfect hands.
+      <p style="text-align: justify;" >
+        "I'm so grateful to the team at Hope Aesthetics International for giving me back my confidence.
+         The hair transplant procedure was seamless and the results have exceeded my expectations. 
+        I can't thank them enough for transforming my life."
       </p>
       <hr />
       <img src="assets/WhatsApp Image 2024-08-06 at 18.01.47.jpeg" alt="user" />
-      <p class="name">Rupan Sengupta</p>
+      <p class="name">Mr. Gaikwad</p>
     </div>
     <div class="card0">
       <span><i class="ri-double-quotes-l"></i></span>
-      <p>
-        Working with Sentry Oak is just great, every problem in my house is
-        solved in a matter of days.
+      <p style="text-align: justify;" >
+        "Dr. Nikhil Patil went above and beyond to make me feel comfortable and informed throughout the entire process.
+         His expertise and attention to detail are truly remarkable.
+         I couldn't be happier with my results. "
+
       </p>
       <hr />
-      <img src="assets/dis.jpeg" alt="user" />
-      <p class="name">Dishant Salunkhe</p>
+      <img src="assets/CLINIC LOGO 13.png" alt="user" />
+      <p class="name">Mr. Khare</p>
     </div>
     <div class="card0">
       <span><i class="ri-double-quotes-l"></i></span>
-      <p>
-        Once a pipe burst in my kitchen and an hour later it was already
-        repaired, thanks to Sentry Oak.
+      <p style="text-align: justify;" >
+        "I had hair therapy at Hope Aesthetics International Clinic, and it was a great experience. 
+        The staff was friendly, and the clinic was clean and modern. 
+        I’m happy with the results and would recommend them to anyone."
       </p>
       <hr />
       <img src="assets/ttt.jpeg" alt="user" />
-      <p class="name">Niraj Patil</p>
+      <p class="name">Dishant Salunkhe</p>
     </div>
   </div>
 </div>
 
 <div id="contact-info" class="container">
-  <h2>Contact Us</h2>
+  <h1 style="color: #00a0e3;"><b>Contact Us</b></h1>
   <div class="contact">
       <p><b>Better yet, see us in person!</b></p>
       <p>We love our customers, so feel free to visit during normal business hours.</p>
@@ -328,13 +339,13 @@
       </a>
   </div>
   <div class="contact-info">
-      <h2>Hope Aesthetics International</h2>
+      <h1><b>Hope Aesthetics International</b></h1>
       <p>Indira Building, Office no. 202, Lane Number 11, Shreeman Society, Bhandarkar Road, Deccan Gymkhana, Pune, Maharashtra, India. 411004</p>
       <p><a href="tel:+919226502901">+91 9226502901</a></p>
-      <p><a href="mailto:support@hopeaesthetics.in">support@hopeaesthetics.in</a></p>
+      <p  style="color: #000000;"><a href="mailto:support@hopeaesthetics.in">support@hopeaesthetics.in</a></p>
   </div>
   <div class="hours">
-      <h2>Hours</h2>
+      <h1 style="color: #00a0e3;"><b>Hours</b></h1>
       <table>
           <tr><td>Mon - Closed</td></tr>
           <tr><td>Tue - 09:30 am – 06:30 pm</td></tr>
@@ -359,20 +370,21 @@
 
 <footer class="footer">
   <div class="container">
-      <h2>Get in Touch</h2>
+      <h2>Get In Touch</h2>
       <p>Enhancing beauty, inspiring confidence, one consultation at a time</p>
       <div class="social-media">
-          <a href="https://tinyurl.com/5hfmvm57" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://tinyurl.com/3d5nzc97" class="facebook" target="_blank"><i class="fab fa-facebook"></i></a>
-          <a href="https://tinyurl.com/2zbvd9dm" class="youtube" target="_blank"><i class="fab fa-youtube"></i></a>
-          <a href="https://wa.me/919226502901" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
-          <a href="https://tinyurl.com/mty88cux" class="linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://x.com/HopeAesthetic24" class="twitter" target="_blank"><i class="fa-sharp fa-solid fa-x"></i></a>
-      </div>
+        <a href="https://tinyurl.com/5hfmvm57" class="social-icon"><i class="bi bi-instagram"></i></a>
+        <a href="https://tinyurl.com/3d5nzc97" class="social-icon"><i class="bi bi-facebook"></i></a>
+        <a href="https://tinyurl.com/2zbvd9dm" class="social-icon"><i class="bi bi-youtube"></i></a>
+        <a href="https://wa.me/919226502901" class="social-icon"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://tinyurl.com/mty88cux" class="social-icon"><i class="bi bi-linkedin"></i></a>
+        <a href="https://x.com/HopeAesthetic24" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+    </div>
+    
       <div class="contact-info">
           <div class="contact-card">
               <i class="fa-solid fa-calendar-check" style="color: #00a0e3;"></i>
-              <p><a href="https://tinyurl.com/43zrm966" style="color: #00a0e3;"> Make an Appointment</a></p>
+              <p><a href="Appointment.html" style="color: #00a0e3;"> Make an Appointment</a></p>
           </div>
 
           <div class="contact-card">

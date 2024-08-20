@@ -5,6 +5,7 @@ body{
 	font-family: 'Poppins', sans-serif;
 	font-weight: 400;
 	overflow-x: hidden;
+  background-color: white;
 }
 * {
   font-family: 'Poppins', sans-serif; 
@@ -489,6 +490,20 @@ h1 {
     font-weight: 500;
 }
   
+
+
+.custom-image {
+  max-width: 100%;
+  height: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
+
+
 /*feature*/
 .feature {
     margin: 5rem 0;
@@ -613,31 +628,48 @@ h1 {
 
 /*Info*/
 .card {
-    padding: 2rem;
-    display: grid;
-    gap: 1rem;
-    background-color: var(--extra-light);
-    border-radius: 5px;
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: var(--extra-light);
+  border-radius: 5px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.3s;
 }
+
 .card p {
-    font-size: 1rem;
-    font-weight: 500;
-  }
-  
+  font-size: 1rem;
+  font-weight: 500;
+}
 
 .card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .card-img-top {
-    height: 250px;
-    object-fit: cover;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-title {
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  margin-bottom: auto;
 }
 
 
+/*FAQ*/
 .container {
     width: 80%;
     margin: auto;
@@ -656,6 +688,7 @@ h2 {
     color: #007BFF;
     text-decoration: none;
 }
+
 .faq {
     margin-bottom: 20px;
 }
@@ -667,14 +700,14 @@ h2 {
     transition: all 0.3s ease;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    position: relative; /* Added */
+    position: relative;
 }
 .faq p{
     font-size: 1rem;
     font-weight: 500;
 }
 .faq h3:hover {
-    background-color: #ffffff;
+    background-color: #00a0e3;
 }
 .faq-answer {
     display: none;
@@ -715,16 +748,12 @@ h2 {
   
   .header p {
     letter-spacing: 2px;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 500;
   }
-  
-  .header h1 {
-    font-family: "Noto Serif", serif;
-    font-size: 2rem;
-    font-weight: 900;
+  .headera a{
+    font:300;
   }
-  
   .testimonials__grid {
     width: 100%;
     display: grid;
@@ -844,9 +873,10 @@ h2 {
     font-weight: 500;
 }
 .contact-info a {
-    color: #00a0e3;
-    text-decoration: none;
+   color: #000000;
+    text-decoration: underline;
 }
+h1
 .hours {
     font-size: 16px;
 }
@@ -989,7 +1019,10 @@ h2 {
 	align-items: center;
 	gap: 10px;
   }
-  
+  .footer .contact-card a {
+    color: #00a0e3;
+    text-decoration: none; /* This removes the underline */
+}
   .footer .contact-card i {
 	font-size: 2em;
   }
@@ -999,7 +1032,8 @@ h2 {
 	color: white;
   }
   /* Responsive Design */
-  @media (max-width: 768px) {
+  @media (max-width: 768px) 
+  {
 	.footer h2 {
 	  font-size: 2em;
 	}
@@ -1059,6 +1093,35 @@ h2 {
   .fa.fa-twitter{
 	  font-family:sans-serif;
   }
+
+/*prp*/
+
+.steps {
+    counter-reset: step;
+    text-align: center;
+}
+.step1 {
+    display: flex;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.step-number {
+    font-size: 2.5em;
+    color: #00a0e3;
+    font-weight: bold;
+    margin-right: 15px;
+    line-height: 1;
+}
+.step-number::before {
+    counter-increment: step;
+    content: counter(step, decimal-leading-zero);
+}
+.step-content {
+    flex: 1;
+}
+
+
+
 
 
   /*services*/
@@ -1123,7 +1186,7 @@ h2 {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
 }
 
 .appointment-container {
@@ -1199,6 +1262,7 @@ h2 {
 .appointment-form input[type="submit"]:active{
   background-color: #0056b3; /* Darker blue on hover */
   transform: scale(1.05); 
+  animation: clickAnimation 0.4s ease; 
 }
 .appointment-form input[type="submit"]:hover {
     background-color: #1976D2;
@@ -1255,3 +1319,39 @@ h2 {
     }
 }
 /**/
+/* Animation Keyframes */
+/* Full-Screen Spinner Container */
+#spinner-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+}
+
+.spinner {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spinner-message {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 20px;
+}
+

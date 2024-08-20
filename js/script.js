@@ -101,13 +101,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-$(document).ready(function() {
-  $('.social-icon').click(function(event) {
-      event.preventDefault();
-      alert('You clicked on a social media icon!');
-  });
-});
-
 
 // JavaScript to toggle answers on clicking questions
 document.addEventListener('DOMContentLoaded', function() {
@@ -129,10 +122,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+function redirectToForm() {
+    window.location.href = 'appointment.html'; // Redirects to appointment.html
+}
 
 
-
-/*Appointment*/
+/*Appointment
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwh73miO3F4XIAvSYg_qNzP7lOXRUC69_qrCt5YrAyaY5gWW6wruJhQ_T3gA-2aiVrtag/exec';
     const form = document.forms['google-sheet'];
 
@@ -146,4 +141,4 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbwh73miO3F4XIAvSYg_qN
                 form.reset(); // Reset the form
             })
             .catch(error => console.error('Error!', error.message));
-    });
+    });*/
