@@ -142,3 +142,30 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbwh73miO3F4XIAvSYg_qN
             })
             .catch(error => console.error('Error!', error.message));
     });*/
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyTevVhqeMBblkYY9dZoaC-0RL70Atv4jbST1EO5OVqygtqwJnH7IKHNhp4pIH_91Wp2A/exec';
+        const form = document.forms['google-sheet'];
+        const spinnerContainer = document.getElementById('spinner-container');
+        const spinnerMessage = document.querySelector('.spinner-message');
+        
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+        
+            spinnerMessage.textContent = 'Submitting your request...'; // Update message
+            spinnerContainer.style.display = 'flex'; // Show spinner and message
+        
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    spinnerMessage.textContent = 'Thank you! We will get back to you soon.'; // Success message
+                    setTimeout(() => {
+                        spinnerContainer.style.display = 'none'; // Hide spinner and message
+                    }, 2000); // Show message for 2 seconds before hiding
+                    form.reset(); // Reset the form
+                })
+                .catch(error => {
+                    spinnerMessage.textContent = 'Oops! Something went wrong. Please try again.'; // Error message
+                    setTimeout(() => {
+                        spinnerContainer.style.display = 'none'; // Hide spinner and message
+                    }, 2000); // Show message for 2 seconds before hiding
+        });
+    });

@@ -621,6 +621,9 @@ h1 {
     font-size: large;
 }
 
+.container.my-5 .col-md-6 {
+  padding: 1rem;
+}
 
 
   @media (max-width: 768px) {
@@ -1096,10 +1099,7 @@ h1
 	  font-size: 1.2em;
 	}
   }
-  .fa.fa-twitter::before{
-	  content:"𝕏";
-	  font-size:1.2em;
-  }
+  
   
   .fa.fa-twitter{
 	  font-family:sans-serif;
