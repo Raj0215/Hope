@@ -490,8 +490,6 @@ h1 {
     font-weight: 500;
 }
   
-
-
 .custom-image {
   max-width: 100%;
   height: 600px;
@@ -501,7 +499,38 @@ h1 {
   
 }
 
+@media (max-width: 768px) {
+  .custom-image {
+    width: 100%;
+    height: auto;
+  }
 
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 769px) {
+  .custom-image {
+    width: 80%; /* or any preferred size */
+    height: auto;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+}
 
 
 /*feature*/
