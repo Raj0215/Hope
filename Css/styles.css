@@ -846,7 +846,7 @@ h1, h2 {
 .container {
     width: 80%;
     margin: auto;
-    padding: 20px;
+    padding: 0px;
 }
 h2 {
     margin-bottom: 20px;
