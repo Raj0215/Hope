@@ -169,3 +169,14 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbwh73miO3F4XIAvSYg_qN
                     }, 2000); // Show message for 2 seconds before hiding
         });
     });
+
+  window.onscroll = function() {
+      updateProgressBar();
+  };
+
+  function updateProgressBar() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("progressBar").style.width = scrolled + "%";
+  }

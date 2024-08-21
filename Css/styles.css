@@ -40,30 +40,37 @@ a{
 	text-decoration: none;
 }
 /* header */
-.header{
-	display: block;
-	width: 100%;
-	position: relative;
-	z-index: 99;
-	padding:15px;
-	background-color:white;
+.header {
+  display: flex;
+  justify-content: center; /* Center the entire header content */
+  align-items: center; /* Center items vertically */
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.header .item-left{
-	flex:0 0 17%;
+
+.header .item-left {
+  flex: 0 0 auto; /* Allow the logo to take its natural width */
 }
-.header .logo a{
-	font-size: 30px;
-	color:#000000;
-	font-weight: 700;
-	text-decoration: none;
+
+.header .item-center {
+  flex: 1; /* Allow the center item to take remaining space */
+  display: flex;
+  justify-content: center; /* Center the menu items */
 }
-.header .item-center{
-	flex:0 0 66%;
+
+.header .menu > ul > li {
+  margin: 0 15px; /* Space between menu items */
 }
-.header .item-right{
-	flex:0 0 17%;
-	display: flex;
-	justify-content: flex-end;
+
+.header .item-right {
+  flex: 0 0 auto; /* Allow the button to take its natural width */
+  display: flex;
+  justify-content: flex-end; /* Align button to the right */
 }
 .header .item-right a{ 
      text-decoration: none;
@@ -79,7 +86,7 @@ a{
 	margin-left: 25px;
 }
 .header .menu > ul > li > a{
-	font-size: 15px;
+	font-size: 18px;
 	font-weight: 500;
 	color:#0297d7;
 	position: relative;
@@ -195,25 +202,27 @@ a{
 
 /* Custom button styling */
 .btn-custom {
-    background-color: #0297d7; 
-    color: white; 
-    border: none; 
-    padding: 10px 10px; 
-    font-size: 16px;
-    border-radius: 5px; 
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+  background: linear-gradient(135deg, #00a0e3, #00a0e3); /* Gradient background */
+  color: white; 
+  border: none; 
+  padding: 12px 20px; /* Increased padding for a larger button */
+  font-size: 18px; /* Slightly larger font size */
+  border-radius: 8px; /* More rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition */
 }
 
 .btn-custom:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    transform: scale(1.05); /* Slightly enlarge on hover */
+  background: linear-gradient(135deg, #0056b3, #004080); /* Darker gradient on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
 .btn-custom:active {
-    background-color: #003d80; /* Even darker blue on click */
-    transform: scale(0.95); /* Slightly shrink on click */
+  background: linear-gradient(135deg, #003d80, #002d60); /* Even darker gradient on click */
+  transform: scale(0.95); /* Slightly shrink on click */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
 }
-
 
 
 
@@ -235,7 +244,7 @@ a{
 		display: flex;
 		height: 30px;
 		width: 30px;
-		margin-left: 15px;
+		margin-left: 185px;
 		cursor: pointer;
 		align-items: center;
 		justify-content: center;
@@ -440,6 +449,24 @@ a{
   .btn-custom {
       padding: 6px 12px; /* Even smaller padding on small screens */
       font-size: 12px; /* Even smaller font size on small screens */
+  }
+}
+
+
+#progressBar {
+  position: fixed;
+  width: 100%;
+  height: 10px;
+  background-color:#00a0e3; 
+  top: 80px;
+  left: 0;
+  z-index: 100;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  #progressBar {
+      top: 68px; /* Distance from the top */
   }
 }
 
@@ -972,6 +999,8 @@ h1
   .sticky-social a.whatsapp { background-color: #25d366; }
   .sticky-social a.youtube { background-color: #ff0000; }
   .sticky-social a.phone { background-color: #007bff; }
+  .sticky-social a.linkedin { background-color: #007bff; }
+
   .sticky-social a:hover {
 	transform: translateY(-5px);
 	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);

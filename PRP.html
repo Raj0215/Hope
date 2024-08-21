@@ -24,6 +24,7 @@
 <body>
     
   <header class="header">
+    <div id="progressBar"></div>
     <div class="container1">
       <div class="row v-center">
         <div class="header-item item-left">
@@ -209,7 +210,7 @@
               </p>
               </div>
           <div class="col-md-6">
-              <img src="assets/Services.webp" alt="Services" class="img-fluid">
+              <img src="assets/smiley-man-holding-prp-vial.jpg" alt="Services" class="img-fluid">
           </div>
       </div>
     </div>
@@ -272,7 +273,7 @@
       </div>
       <div class="sticky-social">
         <a href="https://wa.me/919226502901" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://tinyurl.com/2zbvd9dm" class="youtube"><i class="fab fa-youtube"></i></a>
+        <a href="https://tinyurl.com/mty88cux" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
         <a href="tel:+919897020696" class="phone"><i class="fas fa-phone"></i></a>
     </div>
 
@@ -307,6 +308,18 @@
       </div>
   </footer>
   </footer>
+  <script>
+      window.onscroll = function() {
+        updateProgressBar();
+      };
+      
+      function updateProgressBar() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("progressBar").style.width = scrolled + "%";
+      }
+  </script>
   <script src="js/script.js"></script>
 </body>
 </html>
