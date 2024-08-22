@@ -461,6 +461,7 @@ a{
   top: 80px;
   left: 0;
   z-index: 100;
+  behavior: smooth;
 }
 
 /* Mobile view adjustments */
