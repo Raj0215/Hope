@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-z
+
 
  function redirectToForm() {
     window.open("https://docs.google.com/forms/d/e/1FAIpQLSfLyk0WVM3Y1N8ctYaiASivYcWXblJsF4J7ZB-77NKAVo3Bwg/viewform", "_blank");

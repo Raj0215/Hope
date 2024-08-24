@@ -895,16 +895,18 @@ h2 {
 }
 .whatsapp-button {
     display: inline-block;
-    background-color: #00a0e3;
+    
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-size: 18px;
     margin-bottom: 20px;
+    border: 2px solid #000000;
 }
 .whatsapp-button i {
     margin-right: 10px;
+    color: #000;
 }
 .contact-info {
     text-align: center;
