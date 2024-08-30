@@ -444,7 +444,7 @@ a{
     display: flex;
     height: 30px;
     width: 30px;
-    margin-left: 7rem; /* Aligns it to the right */
+    margin-left: 5rem; /* Aligns it to the right */
     margin-right: 1rem; /* Provides some padding */
     cursor: pointer;
     align-items: center;
@@ -473,6 +473,116 @@ a{
       font-size: 23px; /* Even smaller font size on small screens */
   }
 }
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* General layout adjustments */
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  /* Header adjustments */
+  .header .menu > ul > li {
+    margin-left: 15px;
+  }
+
+  .header .menu > ul > li > a {
+    font-size: 16px;
+  }
+
+  /* Button adjustments */
+  .btn-custom {
+    padding: 10px 18px;
+    font-size: 16px;
+  }
+
+  /* Feature section adjustments */
+  .feature__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .feature__content ul {
+    max-width: 100%;
+  }
+
+  /* Card adjustments */
+  .card {
+    padding: 1.5rem;
+  }
+
+  .card-img-top {
+    height: 200px;
+  }
+
+  /* Testimonials adjustments */
+  .testimonials__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* Contact section adjustments */
+  .contact-info, .hours {
+    font-size: 14px;
+  }
+
+  /* Map container adjustments */
+  .map-container iframe {
+    height: 350px;
+  }
+
+  /* Footer adjustments */
+  .footer h2 {
+    font-size: 2.2em;
+  }
+
+  .footer p {
+    font-size: 1.1em;
+  }
+
+  .footer .contact-info {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  /* Services page adjustments */
+  .service {
+    width: calc(50% - 20px);
+  }
+
+  /* Appointment form adjustments */
+  .appointment-container {
+    flex-direction: row;
+  }
+
+  .appointment-form, .appointment-container img {
+    width: 45%;
+  }
+}
+
+/* Additional iPad-specific adjustments for landscape orientation */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  .header .menu > ul > li {
+    margin-left: 10px;
+  }
+  
+
+  .feature__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .service {
+    width: calc(33.33% - 20px);
+  }
+}
+
+
 
 
 #progressBar {
@@ -539,8 +649,6 @@ h1 {
     font-size: 1rem;
     font-weight: 500;
 }
-  
-
 
 .custom-image {
   max-width: 100%;
@@ -565,130 +673,6 @@ h1 {
 }
 
 
-/*feature*/
-.feature {
-    margin: 5rem 0;
-    position: relative;
-    isolation: isolate;
-  }
-  
-  .feature::before,
-  .feature::after {
-    position: absolute;
-    content: "";
-    background-color: #00a0e3;
-    inset: 0;
-    z-index: -1;
-  }
-  
-  .feature::before {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
-    transform: skewY(8deg);
-  }
-  
-  .feature::after {
-    -webkit-clip-path: polygon(0 0, 100% 50%, 100% 100%, 0% 100%);
-    clip-path: polygon(0 0, 100% 50%, 100% 100%, 0% 100%);
-    transform: skewY(-8deg);
-  }
-  
-  .feature__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    align-items: center;
-  }
-  
-  .feature__image img {
-    max-width: 100%;
-    height: auto;
-    margin: auto;
-  }
-  
-  .feature__content {
-    margin: auto;
-  }
-  
-  .feature__content .section__header {
-    width: 100%;
-    margin-bottom: 4rem;
-    color: white;
-  }
-  
-  .feature__content ul {
-    list-style: none;
-    max-width: 400px;
-  }
-  
-  .feature__content li {
-    position: relative;
-    margin-bottom: 2rem;
-    padding-left: 1rem;
-    color: white;
-    transition: all 0.3s ease; 
-  }
-  
-  .feature__content li:hover {
-    transform: scale(1.05); 
-  }
-  
-  
-  .feature__content li::after {
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 5px;
-    height: 12px;
-    width: 2px;
-    background-color: #000000;
-  }
-  
-  .section__header {
-    margin: auto;
-    padding-bottom: 0.75rem;
-    width: fit-content;
-    position: relative;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #171717;
-  }
-
-  .section_container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 5rem 1rem;
-  }
-  
-  .services-list {
-    list-style-type: none;
-    padding: 0; 
-}
-
-.services-list li a {
-    color: white; 
-    text-decoration: none;
-    font-size: large;
-}
-
-.container.my-5 .col-md-6 {
-  padding: 1rem;
-}
-
-
-  @media (max-width: 768px) {
-    .feature__container {
-      grid-template-columns: 1fr;
-    }
-    
-    .feature__content {
-      text-align: center;
-    }
-    
-    .feature__content ul {
-      margin: 0 auto;
-    }
-  }
 
 /*Info*/
 .card {
@@ -731,6 +715,14 @@ h1 {
 .card-text {
   margin-bottom: auto;
 }
+/* Responsive styles for tablets */
+/* Hide section on iPads */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #services {
+    display: none;
+  }
+}
+
 
 
 /*FAQ*/
