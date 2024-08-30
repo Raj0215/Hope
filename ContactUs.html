@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>HOPE AESTHETICS INTERNATIONAL</title>
+        <title>Contact Us</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
       <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
@@ -22,6 +22,7 @@
     
         
     <header class="header">
+        <div id="progressBar"></div>
         <div class="container1">
             <div class="row v-center">
                 <div class="header-item item-left">
@@ -121,28 +122,28 @@
   
     <header class="hero">
         <div class="hero-content">
-            <h1 style="font-family: Garamond, serif;"><b>Contact Us</b></h1>
+            <h1 style="font-family: Garamond, serif; color: white;"><b>Contact Us</b></h1>
         </div>
     </header>
-    
+    <br>
 
     <div id="contact-info" class="container">
         <div class="contact">
-            <p><b>Better yet, see us in person!</b></p>
-            <p>We love our customers, so feel free to visit during normal business hours.</p>
+            <h1><b>Better yet, see us in person!</b></h1>
+            <p style="color: black;"><b>We love our customers, so feel free to visit during normal business hours.</b></p>
             <a href="https://wa.me/919226502901" class="whatsapp-button">
                 <i class="fab fa-whatsapp"></i> <b style="color: black;">Message us on WhatsApp</b>
             </a>
         </div>
         <div class="contact-info">
-            <h2 style="color: #00a0e3;">Hope Aesthetics International</h2>
-            <p>Indira Building, Office no. 202, Lane Number 11, Shreeman Society, Bhandarkar Road, Deccan Gymkhana, Pune, Maharashtra, India. 411004</p>
+            <h2><b>Hope Aesthetics International</b></h2>
+            <p style="color: black;"><b>Indira Building, Office no. 202, Lane Number 11, Shreeman Society, Bhandarkar Road, Deccan Gymkhana, Pune, Maharashtra, India. 411004</b></p>
             <p><a href="tel:+919226502901">+91 9226502901</a></p>
             <p><a href="mailto:support@hopeaesthetics.in">support@hopeaesthetics.in</a></p>
         </div>
         <div class="hours">
-            <h2 style="color: #00a0e3;">Hours</h2>
-            <table>
+            <h2 style="color: #00a0e3;"><b>Hours</b></h2>
+            <table style="color: black;">
                 <tr><td>Mon - Closed</td></tr>
                 <tr><td>Tue - 09:30 am – 06:30 pm</td></tr>
                 <tr><td>Wed - 09:30 am – 06:30 pm</td></tr>
@@ -190,5 +191,17 @@
       </div>
   </footer>
   <script src="js/script.js"></script>
+  <script>
+    window.onscroll = function() {
+    updateProgressBar();
+    };
+    
+    function updateProgressBar() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("progressBar").style.width = scrolled + "%";
+    }
+  </script>
 </body>
 </html>

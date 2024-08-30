@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>HOPE AESTHETICS INTERNATIONAL</title>
+	<title>High Frequency Treatment</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
@@ -21,6 +21,7 @@
 <body>
     
   <header class="header">
+    <div id="progressBar"></div>
     <div class="container1">
       <div class="row v-center">
         <div class="header-item item-left">
@@ -332,6 +333,17 @@
 <div id="progressBar"></div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/script.js"></script>
-
+<script>
+  window.onscroll = function() {
+  updateProgressBar();
+  };
+  
+  function updateProgressBar() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("progressBar").style.width = scrolled + "%";
+  }
+</script>
 </body>
 </html>

@@ -929,6 +929,10 @@ h2 {
 .contact-info p {
     font-size: 1rem;
     font-weight: 500;
+    color: #000;
+}
+.contact-info h2,h1{
+  color: #000;
 }
 .contact-info a {
    color: #000000;
@@ -941,6 +945,7 @@ h1
 .hours p{
     font-size: 1rem;
     font-weight: 500;
+    color: #000;
 }
 .hours table {
     width: 100%;
