@@ -207,7 +207,7 @@ a{
   border: none; 
   padding: 12px 20px; /* Increased padding for a larger button */
   font-size: 18px; /* Slightly larger font size */
-  border-radius: 8px; /* More rounded corners */
+  border-radius: 4px; /* More rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
   transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition */
 }
@@ -447,8 +447,8 @@ a{
 
 @media (max-width: 480px) {
   .btn-custom {
-      padding: 6px 12px; /* Even smaller padding on small screens */
-      font-size: 12px; /* Even smaller font size on small screens */
+      padding: 8px 32px; /* Even smaller padding on small screens */
+      font-size: 23px; /* Even smaller font size on small screens */
   }
 }
 
@@ -1118,7 +1118,7 @@ h1
 	}
   
 	.footer .social-media a {
-	  font-size: 1.2em;
+	  font-size: 2em;
 	  margin: 0 5px;
 	}
   
