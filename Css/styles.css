@@ -245,7 +245,7 @@ a{
     display: flex;
     height: 30px;
     width: 30px;
-    margin-left: 10rem; /* Aligns it to the right */
+    margin-left: 7rem; /* Aligns it to the right */
     margin-right: 1rem; /* Provides some padding */
     cursor: pointer;
     align-items: center;
