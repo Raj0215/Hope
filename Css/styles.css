@@ -881,6 +881,23 @@ h2 {
     }
   }
 
+
+
+  @font-face {
+    font-family: 'Ballerick Script';
+    src: url('/ballerick-script.regular.otf') format('opentype');
+}
+
+.ballerick-font {
+    font-family:'Ballerick Script', cursive;
+    font-size: 3em; /* Adjust size as needed */
+    text-align: center; /* Optional: Centers the text */
+    color: #000; /* Optional: Sets text color, adjust as needed */
+}
+
+  
+
+
   /*contact Us*/
 h1, h2 {
     text-align: center;
@@ -931,7 +948,7 @@ h2 {
     font-weight: 500;
     color: #000;
 }
-.contact-info h2,h1{
+.contact-info h2{
   color: #000;
 }
 .contact-info a {
@@ -1291,6 +1308,7 @@ h1
 .appointment-form input[type="email"],
 .appointment-form input[type="phone"],
 .appointment-form input[type="age"],
+.appointment-form input[type="service"],
 .appointment-form input[type="submit"] {
     width: 100%;
     padding: 15px;
@@ -1307,7 +1325,8 @@ h1
 .appointment-form input[type="text"]:focus,
 .appointment-form input[type="email"]:focus,
 .appointment-form input[type="phone"]:focus,
-.appointment-form input[type="age"]:focus {
+.appointment-form input[type="age"]:focus
+.appointment-form input[type="service"]:focus {
     outline: none;
     border-color: #33C9DC;
     box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
@@ -1330,7 +1349,38 @@ h1
     background-color: #1976D2;
     transform: scale(1.05);
 }
+.appointment-form select[name="service"] {
+  width: 100%;
+  padding: 15px;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  margin-bottom: 20px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  appearance: none; /* Remove default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+}
 
+/* Dropdown arrow */
+.appointment-form select[name="service"]::after {
+  content: '\25BC'; /* Downward arrow symbol */
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Focus state */
+.appointment-form select[name="service"]:focus {
+  outline: none;
+  border-color: #33C9DC;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -1352,6 +1402,7 @@ h1
     .appointment-form input[type="email"],
     .appointment-form input[type="phone"],
     .appointment-form input[type="age"],
+    .appointment-form input[type="service"],
     .appointment-form input[type="submit"] {
         padding: 10px;
         font-size: 14px;
@@ -1375,11 +1426,14 @@ h1
     .appointment-form input[type="email"],
     .appointment-form input[type="phone"],
     .appointment-form input[type="age"],
+    .appointment-form input[type="service"],
     .appointment-form input[type="submit"] {
         padding: 8px;
         font-size: 14px;
     }
 }
+
+
 /**/
 /* Animation Keyframes */
 /* Full-Screen Spinner Container */

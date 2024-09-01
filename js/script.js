@@ -143,47 +143,6 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbwh73miO3F4XIAvSYg_qN
             .catch(error => console.error('Error!', error.message));
     });*/
 
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxVLgY1NW-fT8Qq___0IeJRr0hkxDjPtJ_xG5Aj6UwA2m82sqryh6DYt361fiV-ZCoquA/exec';
-    const form = document.forms['google-sheet'];
-    const spinnerContainer = document.getElementById('spinner-container');
-    const spinnerMessage = document.querySelector('.spinner-message');
-    
-    form.addEventListener('submit', e => {
-        e.preventDefault();
-    
-        // Display the spinner and initial message
-        spinnerMessage.textContent = 'Submitting your request...';
-        spinnerContainer.style.display = 'flex';
-    
-        // Send form data to Google Apps Script
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then(data => {
-                if (data.result === 'success') {
-                    spinnerMessage.textContent = 'Thank you! We will get back to you soon.';
-                } else {
-                    throw new Error('Error in server response: ' + (data.error || 'Unknown error'));
-                }
-                setTimeout(() => {
-                    spinnerContainer.style.display = 'none';
-                }, 2000);
-                form.reset();
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                spinnerMessage.textContent = 'Oops! Something went wrong. Please try again.';
-                setTimeout(() => {
-                    spinnerContainer.style.display = 'none';
-                }, 2000);
-            });
-    });
-    
-
   window.onscroll = function() {
       updateProgressBar();
   };
