@@ -197,7 +197,9 @@ a{
 	display: none;
 }
 
-
+.large-letter {
+  font-size: 1.5em; /* Adjust this value as needed */
+}
 /* Custom button styling */
 .btn-custom {
   background: linear-gradient(135deg, #00a0e3, #00a0e3); /* Gradient background */
