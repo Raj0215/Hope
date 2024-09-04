@@ -86,7 +86,7 @@ a{
 	margin-left: 25px;
 }
 .header .menu > ul > li > a{
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: 500;
 	color:#0297d7;
 	position: relative;
@@ -124,7 +124,7 @@ a{
 .header .menu > ul > li .sub-menu > ul > li > a {
   display: inline-block;
   padding: 10px 0;
-  font-size: 15px;
+  font-size: 20px;
   color: #555555;
   transition: color 0.3s ease;
   text-decoration: none;
@@ -144,7 +144,7 @@ a{
 .header .menu > ul > li .sub-menu.mega-menu > .list-item > ul > li > a {
   padding: 10px 0;
   display: inline-block;
-  font-size: 15px;
+  font-size: 18px;
   color: #000000;
   transition: color 0.3s ease;
 }
@@ -581,8 +581,6 @@ a{
     width: calc(33.33% - 20px);
   }
 }
-
-
 
 
 #progressBar {
