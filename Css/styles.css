@@ -462,7 +462,7 @@ a{
 
 @media (max-width: 768px) {
   .btn-custom {
-      padding: 8px 16px; /* Smaller padding on medium screens */
+      padding: 16px 32px; /* Smaller padding on medium screens */
       font-size: 14px; /* Smaller font size on medium screens */
   }
 }

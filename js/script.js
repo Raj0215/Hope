@@ -153,3 +153,11 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbwh73miO3F4XIAvSYg_qN
       var scrolled = (winScroll / height) * 100;
       document.getElementById("progressBar").style.width = scrolled + "%";
   }
+
+  window.onload = function() {
+    var logos = document.querySelectorAll('.logo img');
+    if (logos.length > 1) {
+        logos[0].src = 'assets/LOGO1.png'; // Update the first logo to LOGO4
+        logos[1].src = 'assets/LOGO2.png'; // Update the second logo to LOGO5
+    }
+};
