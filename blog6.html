@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Career</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Loss? Just Blame It on Genetics</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -13,189 +14,10 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icofont/1.0.1/css/icofont.min.css">
     <link rel="stylesheet" type="text/css" href="Css/font-awesome.css">
       <link rel="stylesheet" type="text/css" href="Css/styles.css">
-<style>
-.container2 {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Headings */
-h1, h2 {
-    text-align: center;
-    
-    margin-bottom: 20px;
-}
-
-h1 {
-    font-size: 2.5rem;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-/* Form Styles */
-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-bottom: 40px;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-label {
-    margin-bottom: 8px;
-    font-weight: 600;
-    color: #000000;
-}
-
-input, select, textarea {
-    padding: 12px 15px;
-    font-size: 1rem;
-    border: 1px solid #d1d5db;
-    border-radius: 8px;
-    background-color: #f9fafb;
-    transition: border-color 0.3s, box-shadow 0.3s;
-}
-
-input:focus, select:focus, textarea:focus {
-    border-color: #00a0e3;
-    box-shadow: 0 0 5px rgba(29, 78, 216, 0.2);
-    outline: none;
-}
-
-textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
-button {
-    grid-column: span 2;
-    padding: 15px;
-    background-color: #00a0e3;
-    color: #ffffff;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.25rem;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-button:hover {
-    background-color: #1e40af;
-    transform: translateY(-2px);
-}
-
-/* Vacancy Section */
-.vacancies {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.vacancy {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s;
-}
-
-.vacancy:hover {
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-}
-
-.vacancy h3 {
-    font-size: 1.25rem;
-    margin-bottom: 10px;
-    color: #000000;
-    font-weight: bold;
-}
-
-.vacancy p {
-    font-size: 1rem;
-    margin: 0 0 8px;
-    color: #000000;
-}
-
-.vacancy p strong {
-    color: #000000;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 1024px) {
-    .container2 {
-        padding: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    form {
-        grid-template-columns: 1fr;
-    }
-
-    button {
-        grid-column: span 1;
-    }
-
-    .vacancies {
-        grid-template-columns: 1fr;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.75rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .container2 {
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 1.75rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    input, select, textarea {
-        font-size: 0.875rem;
-    }
-
-    button {
-        font-size: 1rem;
-        padding: 12px;
-    }
-
-    .vacancy h3 {
-        font-size: 1.125rem;
-    }
-
-    .vacancy p {
-        font-size: 0.875rem;
-    }
-}
-</style>
 </head>
 <body>
     <header class="header">
@@ -303,82 +125,108 @@ button:hover {
             </div>
         </div>
       </header>
-    
-    <header class="hero">
-        <div class="hero-content">
-            <h1 style="font-family: Garamond, serif;"><b>Career</b></h1>
-        </div>
-    </header>
 
-    <div class="container2">
-        <h1><b>Join Our Team At Hope Aesthetics International</b></h1>
-        <form id="careerForm" action="https://formsubmit.co/hope.ownyourlook24@gmail.com" method="post" enctype="multipart/form-data">
-            <div class="form-group">
-                <label for="firstName">Full Name *</label>
-                <input type="text" id="firstName" name="firstName" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email ID *</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="phoneNumber">Phone Number *</label>
-                <input type="tel" id="phoneNumber" name="phoneNumber" required>
-            </div>
-            <div class="form-group">
-                <label for="position">Applying Position</label>
-                <select id="position" name="position">
-                    <option value="" disabled selected>Select Position</option>
-                    <option value="Telesales Executive">Telesales Executive</option>
-                    <option value="Center Manager">Center Manager</option>
-                    <option value="Sales Manager">Sales Manager</option>
-                    <option value="Hair Transplant Technician (Female)">Hair Transplant Technician (Female)</option>
-                </select>
+      <div class="post-img">
+        <img src="assets/Prp1.jpg" alt="">
+    </div>
+    <div class="m-auto blog-post-content max-width-2 m-auto my-2">
+        <br>
+        <h2><b>Hair Loss? Just Blame It on Genetics!</b></h2>
+        <div class="blogpost-meta">
+            <div class="author-info">
+                <div>
+                <b>
+                  Author - Dr.Nikhil Patil (Hair Transplant Consultant)
+                </b>
+                </div>
+                <div>27-09-24 | 6 min read</div>
             </div>
             
-            <div class="form-group">
-                <label for="resume">Upload Your Resume</label>
-                <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+        </div>
+         <p style="text-align: justify;">When it comes to hair loss, it’s easy to point fingers at one major culprit—genetics. If your father, grandfather, or even uncle went bald early, chances are you’ve heard the phrase, “It’s in your genes.” But is genetics really the only thing to blame for thinning hair? While heredity does play a significant role, the story isn’t that simple. And more importantly, hair loss doesn’t have to be a lifelong sentence just because it runs in the family.</p>
+ <br>        
+         <h2>Genetics: The Main Culprit?</h2>
+         <p style="text-align: justify;">It’s true that genetics are often at the core of hair loss. Androgenetic alopecia, or male-pattern baldness, is the most common cause of hair loss in men and is largely inherited. If your parents or grandparents experienced hair thinning or baldness, it’s likely you will too. For many, the early signs of hair loss—receding hairlines and thinning at the crown—can be frustrating but feel inevitable.<br><br>
+            However, simply blaming genetics doesn’t always make the emotional impact easier to handle. Watching your hair gradually disappear can still affect your self-esteem, even if you know it’s been written in your DNA for years.</p>
+        <br>
+         <p style="text-align: justify;">While genetics play a big part, other factors also contribute to hair loss. Stress, diet, hormonal imbalances, and even certain medications can speed up the process. So, if you’ve noticed more hair in the shower drain or on your pillow, it’s not always about your family tree. External factors like stress from work, lifestyle choices, or poor scalp health can accelerate hair thinning.<br><br>
+            Even though you might feel powerless against the genetic lottery, understanding that other aspects contribute to your hair loss can be a relief. It opens the door to solutions that go beyond just accepting what nature has given—or taken away—from you.        </p>
+<br>   
+         <p style="text-align: justify;">While genetics may dictate whether you’re more likely to lose your hair, they don’t have to dictate how you deal with it. Hair transplants offer a solution for those who want to restore their hair despite the cards they’ve been dealt. Modern techniques, like Follicular Unit Extraction (FUE), allow for natural-looking results, giving you back a fuller head of hair without the scars and long recovery times of older methods.<br><br>
+            Opting for a hair transplant is not about defying genetics—it’s about taking control of how you look and feel. Instead of resigning yourself to hair loss, a transplant can help you reclaim the youthful, fuller hair that genetics may have taken from you.        </p>
+<br>       
+         <p style="text-align: justify;">Yes, you can blame genetics for hair loss, but that doesn’t mean you have to accept it as your fate. While your genes play a big role, other factors contribute too, and hair transplants offer a way to regain control over your appearance. Just because hair loss runs in the family doesn’t mean you have to live with it—hair restoration can help you feel like yourself again, no matter what your genes say.
+            </p>
+    
+   
+        </div>
+    
+    <div class="max-width-1 m-auto"><hr></div>
+    <div class="home-articles max-width-1 m-auto font2">
+        <h2>People who read this also read</h2>
+        <div class="row">
+    
+       
+        <div class="home-article more-post">
+            <div class="home-article-img">
+                <img src="assets/why.webp" alt="article">
             </div>
-            <button type="submit">Submit</button>
-        </form>
-        <h2><b>Vacancies</b></h2>
-        <div class="vacancies">
-            <div class="vacancy">
-                <h3>1) Telesales Executive</h3>
-                <p><strong>Qualification:</strong> Graduation Required</p>
-                <p><strong>Role Category:</strong> Retail & B2C Sales</p>
-                <p><strong>Department:</strong> Sales & Business Development</p>
-                <p><strong>Employment Type:</strong> Full-Time</p>
-                <p><strong>Experience:</strong> Minimum 1-2 year</p>
+            <div class="home-article-content font1 center">
+                <a href="/blog2.html"><h3>Why Bother? Baldness Is the New Cool!</h3></a>
+                
+                <div>Author - Dr.Nikhil Patil (Hair Transplant Consultant)</div>
+                <span>22-09-24 | 6 min read</span>
             </div>
-            <div class="vacancy">
-                <h3>2) Center Manager</h3>
-                <p><strong>Qualification:</strong> Graduation Required</p>
-                <p><strong>Role Category:</strong> Enterprise & B2B Sales</p>
-                <p><strong>Department:</strong> Sales & Business Development</p>
-                <p><strong>Employment Type:</strong> Full-Time</p>
-                <p><strong>Experience:</strong> Minimum 1-2 year</p>
+        </div>
+        <div class="home-article more-post">
+            <div class="home-article-img">
+                <img src="assets/young.jpg" alt="article">
             </div>
-            <div class="vacancy">
-                <h3>3) Sales Manager</h3>
-                <p><strong>Qualification:</strong> Graduation Required</p>
-                <p><strong>Role Category:</strong> Enterprise & B2B Sales</p>
-                <p><strong>Department:</strong> Sales & Business Development</p>
-                <p><strong>Employment Type:</strong> Full-Time</p>
-                <p><strong>Experience:</strong> Minimum 1-2 year</p>
+            <div class="home-article-content font1 center">
+                <a href="/blog3.html"><h3>Want to Look Younger? Nah, Stay Bald!</h3></a>
+                
+                <div>Author - Dr.Nikhil Patil (Hair Transplant Consultant)</div>
+                <span>23-09-24| 6 min read</span>
             </div>
-            <div class="vacancy">
-                <h3>4) Hair Transplant Technician (Female)</h3>
-                <p><strong>Qualification:</strong> Graduation Required</p>
-                <p><strong>Role Category:</strong> Healthcare & Life Sciences</p>
-                <p><strong>Department:</strong> Healthcare & Life Sciences</p>
-                <p><strong>Employment Type:</strong> Full-Time</p>
-                <p><strong>Experience:</strong> Minimum 0-1 year</p>
+        </div>
+        <div class="home-article more-post">
+            <div class="home-article-img">
+                <img src="assets/hat.jpg" alt="article">
+            </div>
+            <div class="home-article-content font1 center">
+                <a href="/blog4.html"><h3>Who Needs Hair When Hats Exist?</h3></a>
+                
+                <div>Author - Dr.Nikhil Patil (Hair Transplant Consultant)</div>
+                <span>24-09-24 | 6 min read</span>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+
+
+
+
+    <div class="appointment-container">
+        <div>
+            <img src="assets/CLINIC LOGO 10.png" alt="Reception">
+        </div>
+        <div class="appointment-form">
+            <h1 style="font-family: Futura, sans-serif;"><b>BOOK YOUR APPOINTMENT</b></h1>
+            <form method="post" name="google-sheet">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="phone" name="phone" placeholder="Phone Number" required>
+                <input type="age" name="age" placeholder="Age" required>
+                <input type="service" name="service" placeholder="Serivce" required>
+                <input type="submit" value="Request Appointment">
+            </form>
+            <div id="spinner-container" style="display: none;">
+                <div class="spinner"></div>
+                <div class="spinner-message">Submitting your request...</div>
             </div>
         </div>
     </div>
-
 
     <div class="sticky-social">
         <a href="https://wa.me/919226502901" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
@@ -414,17 +262,71 @@ button:hover {
         </div>
     </footer>
     <script src="js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" defer></script>
     <script>
+       const scriptURL = 'https://script.google.com/macros/s/AKfycbyiRa3GSZkO_gX4HWsD-uxQsXNW04-J-5O8TwJdE6UBODkQ_P9VpVhJdhAK8mpVDOXr/exec';
+    const form = document.forms['google-sheet'];
+    const spinnerContainer = document.getElementById('spinner-container');
+    const spinnerMessage = document.querySelector('.spinner-message');
+    
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+    
+        // Display the spinner and initial message
+        spinnerMessage.textContent = 'Submitting your request...';
+        spinnerContainer.style.display = 'flex';
+    
+        // Send form data to Google Apps Script
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.result === 'success') {
+                    spinnerMessage.textContent = 'Thank you! We will get back to you soon.';
+                } else {
+                    throw new Error('Error in server response: ' + (data.error || 'Unknown error'));
+                }
+                setTimeout(() => {
+                    spinnerContainer.style.display = 'none';
+                }, 2000);
+                form.reset();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                spinnerMessage.textContent = 'Oops! Something went wrong. Please try again.';
+                setTimeout(() => {
+                    spinnerContainer.style.display = 'none';
+                }, 2000);
+            });
+    });
+      </script>
+      <script>
         window.onscroll = function() {
         updateProgressBar();
-        };
-        
-        function updateProgressBar() {
+      };
+      
+      function updateProgressBar() {
         var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         var scrolled = (winScroll / height) * 100;
         document.getElementById("progressBar").style.width = scrolled + "%";
-        }
+      }
+      </script>
+      <script>
+        window.onload = function() {
+       var logos = document.querySelectorAll('.logo img');
+       if (logos.length > 1) {
+           logos[0].src = 'assets/LOGO1.png'; // Update the first logo to LOGO4
+           logos[1].src = 'assets/LOGO2.png'; // Update the second logo to LOGO5
+       }
+       };
+
       </script>
 </body>
 </html>
