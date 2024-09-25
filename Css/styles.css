@@ -1238,6 +1238,7 @@ h1
 	text-decoration: none;
 	color: inherit;
 	transition: transform 0.3s, box-shadow 0.3s;
+  width: calc(28.000% - 40px);
   }
   
   .service img {
@@ -1259,6 +1260,21 @@ h1
 	box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   }
   
+  /* 2 items per row on medium screens */
+@media (max-width: 1024px) {
+  .service {
+    flex: 1 1 calc(50% - 40px); /* 2 items per row */
+    max-width: calc(50% - 40px);
+  }
+}
+
+/* 1 item per row on small screens */
+@media (max-width: 768px) {
+  .service {
+    flex: 1 1 100%; /* 1 item per row */
+    max-width: 100%;
+  }
+}
 
 /*blogs*/
 .home-articles {
