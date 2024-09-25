@@ -1539,6 +1539,10 @@ h1
         padding: 5px;
     }
 
+    .appointment-container img {
+      width: 100%; 
+      max-width: 300px;
+  }
     .appointment-form {
         padding: 15px;
     }
@@ -1556,6 +1560,7 @@ h1
         padding: 8px;
         font-size: 14px;
     }
+
 }
 
 
